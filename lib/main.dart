@@ -29,12 +29,23 @@ class MainApp extends StatelessWidget {
               children: [
                 SizedBox(height: titleSpacing),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: EdgeInsets.fromLTRB(8.0, 8.0, 0.0, 0.0),
                   child: Text(
                     'Pastries',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18.0,
+                      fontSize: 22.0,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(8.0, 0.0, 0.0, 40.0),
+                  child: Text(
+                    '5 Delicacies available',
+                    style: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      fontSize: 14.0,
+                      color: Color.fromARGB(255, 122, 122, 122),
                     ),
                   ),
                 ),
@@ -47,9 +58,9 @@ class MainApp extends StatelessWidget {
                       SizedBox(width: itemSpacing),
                       MySquare(assetImagePath: 'assets/mince_pie.png'),
                       SizedBox(width: itemSpacing),
-                      MySquare(assetImagePath:'assets/cup_cake.png'),
+                      MySquare(assetImagePath: 'assets/cup_cake.png'),
                       SizedBox(width: itemSpacing),
-                      MySquare(assetImagePath:'assets/gingerbread_man.png'),
+                      MySquare(assetImagePath: 'assets/gingerbread_man.png'),
                     ],
                   ),
                 ),
@@ -57,7 +68,7 @@ class MainApp extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    'Cakes', // Add a title for the second SingleChildScrollView
+                    'Explore Christmas', // Add a title for the second SingleChildScrollView
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18.0,
@@ -69,7 +80,7 @@ class MainApp extends StatelessWidget {
                   child: Row(
                     children: [
                       SizedBox(width: itemSpacing),
-                      MyRec(assetImagePath: 'assets/Santa.png'),
+                      MyRec(assetImagePath: 'assets/santa.png'),
                       SizedBox(width: itemSpacing),
                       MyRec(assetImagePath: 'assets/sleigh.png'),
                       SizedBox(width: itemSpacing),

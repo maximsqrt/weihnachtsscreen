@@ -22,19 +22,30 @@ class MySquare extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(30.0),
       ),
-      child: Center(
-        child: Align(
-          alignment: Alignment.bottomRight,
-          child: FractionallySizedBox(
-            widthFactor: 0.8, // Adjust the width factor as needed
-            heightFactor: 0.8, // Adjust the height factor as needed
-            child: Image.asset(
-              assetImagePath, // Use the provided asset image path
-              fit: BoxFit.cover,
-            ),
-          ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(30.0),
+        child: Image.asset(
+          assetImagePath,
+          fit: BoxFit.cover,
         ),
       ),
     );
   }
 }
+
+//       child: Center(
+//         child: Align(
+//           alignment: Alignment.bottomRight,
+//           child: FractionallySizedBox(
+//             widthFactor: 0.8, // Adjust the width factor as needed
+//             heightFactor: 0.8, // Adjust the height factor as needed
+//             child: Image.asset(
+//               assetImagePath, // Use the provided asset image path
+//               fit: BoxFit.cover,
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
