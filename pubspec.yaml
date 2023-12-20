@@ -18,18 +18,5 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/gift.png
-    - assets/branch_BG.png
-    - assets/candy_BG.png
-    - assets/cup_cake.png
-    - assets/gingerbread_man.png
-    - assets/glove.png
-    - assets/house.png
-    - assets/kai.png
-    - assets/mince_pie.png
-    - assets/party.png
-    - assets/Santa.png
-    - assets/sleigh.png
-    - assets/snowball.png
-    - assets/stars.png
-    - assets/yule_cake.png
+    - assets/
+    - assets/santa.png
