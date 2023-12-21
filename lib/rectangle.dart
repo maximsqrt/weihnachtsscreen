@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 class MyRec extends StatelessWidget {
   final String assetImagePath;
+  final String text;
 
   // Constructor to receive the asset image path
-  const MyRec({super.key, required this.assetImagePath});
+  const MyRec({super.key, required this.assetImagePath, required this.text});
   @override
   Widget build(BuildContext context) {
     return Container(

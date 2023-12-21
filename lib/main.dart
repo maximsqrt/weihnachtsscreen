@@ -27,9 +27,8 @@ class MainApp extends StatelessWidget {
             child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: titleSpacing),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(8.0, 8.0, 0.0, 0.0),
+                  padding: EdgeInsets.fromLTRB(8.0, 100.0, 0.0, 0.0),
                   child: Text(
                     'Pastries',
                     style: TextStyle(
@@ -54,19 +53,26 @@ class MainApp extends StatelessWidget {
                   child: Row(
                     children: [
                       SizedBox(width: itemSpacing),
-                      MySquare(assetImagePath: 'assets/yule_cake.png'),
+                      MySquare(
+                        assetImagePath: 'assets/yule_cake.png',
+                        text: '',
+                      ),
                       SizedBox(width: itemSpacing),
-                      MySquare(assetImagePath: 'assets/mince_pie.png'),
+                      MySquare(
+                          assetImagePath: 'assets/mince_pie.png', text: ''),
                       SizedBox(width: itemSpacing),
-                      MySquare(assetImagePath: 'assets/cup_cake.png'),
+                      MySquare(assetImagePath: 'assets/cup_cake.png', text: ''),
                       SizedBox(width: itemSpacing),
-                      MySquare(assetImagePath: 'assets/gingerbread_man.png'),
+                      MySquare(
+                        assetImagePath: 'assets/gingerbread_man.png',
+                        text: '',
+                      ),
                     ],
                   ),
                 ),
                 SizedBox(height: titleSpacing / 2),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 20.0),
                   child: Text(
                     'Explore Christmas', // Add a title for the second SingleChildScrollView
                     style: TextStyle(
@@ -80,15 +86,30 @@ class MainApp extends StatelessWidget {
                   child: Row(
                     children: [
                       SizedBox(width: itemSpacing),
-                      MyRec(assetImagePath: 'assets/santa.png'),
+                      MyRec(
+                        assetImagePath: 'assets/santa.png',
+                        text: '',
+                      ),
                       SizedBox(width: itemSpacing),
-                      MyRec(assetImagePath: 'assets/sleigh.png'),
+                      MyRec(
+                        assetImagePath: 'assets/sleigh.png',
+                        text: '',
+                      ),
                       SizedBox(width: itemSpacing),
-                      MyRec(assetImagePath: 'assets/snowball.png'),
+                      MyRec(
+                        assetImagePath: 'assets/snowball.png',
+                        text: '',
+                      ),
                       SizedBox(width: itemSpacing),
-                      MyRec(assetImagePath: 'assets/glove.png'),
+                      MyRec(
+                        assetImagePath: 'assets/glove.png',
+                        text: '',
+                      ),
                       SizedBox(width: itemSpacing),
-                      MyRec(assetImagePath: 'assets/party.png'),
+                      MyRec(
+                        assetImagePath: 'assets/party.png',
+                        text: '',
+                      ),
                     ],
                   ),
                 ),
